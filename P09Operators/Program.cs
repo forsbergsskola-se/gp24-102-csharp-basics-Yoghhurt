@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Give me a number of seconds");
+﻿//P09
+Console.WriteLine("Give me a number of seconds");
 string userInput = Console.ReadLine();
 
 int seconds = int.Parse(userInput);
@@ -19,6 +20,7 @@ Console.WriteLine($"{numberOfDays}.{numberOfHours}:{numberOfMinutes}:{numberOfSe
 
 Console.WriteLine($"In total that is {(float)seconds / 86400} days.");
 
+//P09_1
 Console.WriteLine("How fast are you going?");
 
 string userInput2 = Console.ReadLine();
@@ -28,7 +30,7 @@ int kmh = int.Parse(userInput2);
 double ms = kmh / 3.6;
 
 Console.WriteLine($"You're going {ms} m/s");
-
+//P09_2
 Console.WriteLine("Give me some minutes!");
 
 string userInput3 = Console.ReadLine();
@@ -38,6 +40,20 @@ int minute = int.Parse(userInput3);
 int seconds2 = minute * 60; 
 Console.WriteLine($"That's {seconds2} in seconds");
 
+//P09_3
+Console.WriteLine("Give me some numbers");
+string inputinput = Console.ReadLine();
+float number = float.Parse(inputinput);
+string inputinput2 = Console.ReadLine();
+float number2 = float.Parse(inputinput2);
+
+float result2 = number / number2;
+
+Console.WriteLine($"{result2}");
+
+
+
+//P09_4
 Console.WriteLine("Need any thing figured out?");
 
 string userInput4 = Console.ReadLine();
@@ -52,6 +68,7 @@ float divide3 = divide / divide2;
 
 Console.WriteLine($"{divide3}");
 
+//p09_5
 Console.WriteLine("What's the radius of this circle?");
 string userInput6 = Console.ReadLine();
 
