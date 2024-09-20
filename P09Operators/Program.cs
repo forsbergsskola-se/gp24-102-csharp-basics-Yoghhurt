@@ -52,6 +52,15 @@ float divide3 = divide / divide2;
 
 Console.WriteLine($"{divide3}");
 
+Console.WriteLine("What's the radius of this circle?");
+string userInput6 = Console.ReadLine();
+
+int radius = int.Parse(userInput6);
+
+double area = radius * radius * 3.14;
+Console.WriteLine($"That means the area is {area}");
+
+
 
 
 
