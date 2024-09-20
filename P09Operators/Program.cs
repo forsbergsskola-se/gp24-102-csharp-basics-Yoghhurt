@@ -91,6 +91,20 @@ int multiply2 = int.Parse(userInput8);
 int result3 = multiply * multiply2;
 Console.WriteLine($"{result3}");
 
+//p09_8
+Console.WriteLine("How tall are you?");
+string userInput9 = Console.ReadLine();
+float tall = float.Parse(userInput9);
+Console.WriteLine("How much do you weigh?");
+string userInput10 = Console.ReadLine();
+float weight = float.Parse(userInput10);
+
+float reslut4 = tall * tall;
+float reslut5 = weight / reslut4;
+
+Console.WriteLine($"Your BMI is {reslut5}%");
+
+
 
 
 
