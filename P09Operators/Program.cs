@@ -38,6 +38,23 @@ int minute = int.Parse(userInput3);
 int seconds2 = minute * 60; 
 Console.WriteLine($"That's {seconds2} in seconds");
 
-    
+Console.WriteLine("Need any thing figured out?");
+
+string userInput4 = Console.ReadLine();
+
+int divide = int.Parse(userInput4);
+
+string userInput5 = Console.ReadLine();
+
+int divide2 = int.Parse(userInput5);
+
+float divide3 = divide / divide2; 
+
+Console.WriteLine($"{divide3}");
+
+
+
+
+
 
  
