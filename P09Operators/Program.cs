@@ -18,3 +18,17 @@ Console.WriteLine("Number of seconds " + numberOfSeconds);
 Console.WriteLine($"{numberOfDays}.{numberOfHours}:{numberOfMinutes}:{numberOfSeconds}");
 
 Console.WriteLine($"In total that is {(float)seconds / 86400} days.");
+
+Console.WriteLine("How fast are you going?");
+
+string userInput2 = Console.ReadLine();
+
+int kmh = int.Parse(userInput2);
+
+double ms = kmh / 3.6;
+
+Console.WriteLine($"You're going {ms} m/s");
+
+
+
+ 
