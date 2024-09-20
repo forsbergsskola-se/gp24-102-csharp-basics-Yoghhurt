@@ -77,6 +77,19 @@ int radius = int.Parse(userInput6);
 double area = radius * radius * 3.14;
 Console.WriteLine($"That means the area is {area}");
 
+//p09_6
+
+
+
+//p09_7
+Console.WriteLine("Let's multiply!");
+string userInput7 = Console.ReadLine();
+int multiply = int.Parse(userInput7);
+string userInput8 = Console.ReadLine();
+int multiply2 = int.Parse(userInput8);
+
+int result3 = multiply * multiply2;
+Console.WriteLine($"{result3}");
 
 
 
