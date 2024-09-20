@@ -29,6 +29,15 @@ double ms = kmh / 3.6;
 
 Console.WriteLine($"You're going {ms} m/s");
 
+Console.WriteLine("Give me some minutes!");
 
+string userInput3 = Console.ReadLine();
+
+int minute = int.Parse(userInput3);
+
+int seconds2 = minute * 60; 
+Console.WriteLine($"That's {seconds2} in seconds");
+
+    
 
  
