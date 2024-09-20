@@ -1,24 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("What is your age?"); 
+﻿Console.WriteLine("What is your age?");
 
-int age = Console.ReadLine();
+int age = int.Parse(Console.ReadLine());
 
-
-
-bool isChild = 0 <= 12;
-bool isTeen = 13 <= 19;
-bool isAdult = 19 > 1000;
-
-
-if (isChild)
-{
-    Console.WriteLine("Youre a child:"); 
-}
-
-if (isTeen)
-{
-    Console.WriteLine("Youre a teen:");
-}
-if (isAdult) {
-Console.WriteLine("Youre an Adult:");
+if (age < 13) { 
+    Console.WriteLine("You're a child.");
+}else if (age < 18) { 
+    Console.WriteLine("You're a teenager.");
+} else { 
+    Console.WriteLine("You're an adult.");
 }
