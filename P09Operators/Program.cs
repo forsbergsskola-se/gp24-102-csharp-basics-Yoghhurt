@@ -116,6 +116,15 @@ int side2 = int.Parse(userInput12);
 double hypotenuse = Math.Sqrt (side1 * side1 + side2 * side2);
 Console.WriteLine($"The hypotenuse is {hypotenuse}");
 
+//P09_10
+
+Console.WriteLine("Gimme seconds.");
+string userInput13 = Console.ReadLine();
+int secondsseconds = int.Parse(userInput13);
+
+int min = secondsseconds / 60;
+int remainingsec = secondsseconds % 60;
+Console.WriteLine($"{min}:{remainingsec}");
 
 
 
