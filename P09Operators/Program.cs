@@ -104,6 +104,17 @@ float reslut5 = weight / reslut4;
 
 Console.WriteLine($"Your BMI is {reslut5}%");
 
+//P09_9
+
+Console.WriteLine("Give me the two sides of the triangle.");
+
+string userInput11 = Console.ReadLine();
+int side1 = int.Parse(userInput11);
+string userInput12 = Console.ReadLine();
+int side2 = int.Parse(userInput12);
+
+double hypotenuse = Math.Sqrt (side1 * side1 + side2 * side2);
+Console.WriteLine($"The hypotenuse is {hypotenuse}");
 
 
 
