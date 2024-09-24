@@ -13,21 +13,21 @@ if (result2 >= 90)
     
 }
 
-if (result2 >= 80)
+if (result2 >= 80 && result2 < 90)
 {Console.WriteLine("Your grade is: B");
     
 }
 
-if (result2 >= 70)
+if (result2 >= 70 && result2 < 80)
 {Console.WriteLine("Your grade is: C");
     
 }
 
-if (result2 <=60)
+if (result2 >=60 && result2 < 70)
 {Console.WriteLine("Your grade is: D");
     
 }
-else
+else if (result2 < 60)
 {
     Console.WriteLine("Your grade is: F");
 }
@@ -44,27 +44,36 @@ int number6 = int.Parse(number3);
 int big, small;
 
 
+
+
 //P11_3
-Console.WriteLine("Is that a vowel?");
+Console.WriteLine("Vowel, number or consonant?");
+string userInput = Console.ReadLine();
 
-char input = Console.ReadLine()[0];
+List<char> numbers = new List<char>();
+List<char> consonants = new List<char>();
+List<char> vowels = new List<char>();
 
-if (input == 'a' || input == 'e' || input == 'i' || input == 'o' || input == 'u' ||
-              input == 'A' || input == 'E' || input == 'I' || input == 'O' || input == 'U')
+foreach (char check in userInput)
 {
-    Console.WriteLine($"{input} is a vowel.");
+    if (char.IsDigit(check))
+    {
+        numbers.Add(check);
+        Console.WriteLine("That is a digit");
+    }
+    else if ("AEIOUaeiou".IndexOf(check) >= 0)
+    {
+        vowels.Add(check);
+        Console.WriteLine("That is a vowel");
+    }
+    else if (char.IsLetter(check))
+    {
+        consonants.Add(check);
+        Console.WriteLine("That is a consonant");
+    }
 }
 
-if (input != 'a' || input != 'e' || input != 'i' || input != 'o' || input != 'u' ||
-    input != 'A' || input != 'E' || input != 'I' || input != 'O' || input != 'U')
-{
-    Console.WriteLine($"{input} is not a vowel.");
-}
 
-else
-{
-    Console.WriteLine($"{input} is a digit.");
-}
 
 
 
