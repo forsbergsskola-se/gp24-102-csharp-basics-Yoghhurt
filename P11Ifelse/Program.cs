@@ -1,4 +1,7 @@
 ﻿//P11_1 
+
+using System.ComponentModel.Design;
+
 Console.WriteLine("Let's check your grade");
 
 string result = Console.ReadLine();
@@ -30,6 +33,15 @@ else
 }
 
 //P11_2
+Console.WriteLine("Give me three numbers.");
+string number1 = Console.ReadLine();
+int number4 = int.Parse(number1);
+string number2 = Console.ReadLine();
+int number5 = int.Parse(number2);
+string number3 = Console.ReadLine();
+int number6 = int.Parse(number3);
+
+int big, small;
 
 
 //P11_3
@@ -43,11 +55,16 @@ if (input == 'a' || input == 'e' || input == 'i' || input == 'o' || input == 'u'
     Console.WriteLine($"{input} is a vowel.");
 }
 
-else
+if (input != 'a' || input != 'e' || input != 'i' || input != 'o' || input != 'u' ||
+    input != 'A' || input != 'E' || input != 'I' || input != 'O' || input != 'U')
 {
     Console.WriteLine($"{input} is not a vowel.");
 }
 
+else
+{
+    Console.WriteLine($"{input} is a digit.");
+}
 
 
 
