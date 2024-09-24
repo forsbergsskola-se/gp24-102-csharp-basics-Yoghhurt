@@ -20,7 +20,7 @@ if (result2 >= 70)
     
 }
 
-if (result2 >=60)
+if (result2 <=60)
 {Console.WriteLine("Your grade is: D");
     
 }
@@ -30,3 +30,25 @@ else
 }
 
 //P11_2
+
+
+//P11_3
+Console.WriteLine("Is that a vowel?");
+
+char input = Console.ReadLine()[0];
+
+if (input == 'a' || input == 'e' || input == 'i' || input == 'o' || input == 'u' ||
+              input == 'A' || input == 'E' || input == 'I' || input == 'O' || input == 'U')
+{
+    Console.WriteLine($"{input} is a vowel.");
+}
+
+else
+{
+    Console.WriteLine($"{input} is not a vowel.");
+}
+
+
+
+
+
