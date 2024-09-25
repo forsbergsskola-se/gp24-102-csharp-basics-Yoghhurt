@@ -101,6 +101,20 @@ foreach (char check in userInput)
         Console.WriteLine("That is a consonant");
     }
 }
+//P11_4
+
+Console.WriteLine("Need some help with maths?");
+
+string numInput = Console.ReadLine();
+int firstNum = int.Parse(numInput);
+string oper = Console.ReadLine();
+char operation = Convert.ToChar(oper);
+string numInput2 = Console.ReadLine();
+int secondNum = int.Parse(numInput2);
+
+
+
+
 
 
 
