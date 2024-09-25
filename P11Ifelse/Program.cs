@@ -134,8 +134,20 @@ if (op == "/")
 }
 Console.WriteLine($"{res}");
 
+//P11_5
 
+Console.WriteLine("Is that number even or odd?");
+string userInput3 = Console.ReadLine();
+int userInt = int.Parse(userInput3);
 
+if (userInt  % 2 == 0)
+{
+    Console.WriteLine($"{userInt} is even");
+}
+else
+{
+    Console.WriteLine($"{userInt} is odd");
+}
 
 
 
