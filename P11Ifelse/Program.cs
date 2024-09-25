@@ -106,13 +106,33 @@ foreach (char check in userInput)
 Console.WriteLine("Need some help with maths?");
 
 string numInput = Console.ReadLine();
-int firstNum = int.Parse(numInput);
-string oper = Console.ReadLine();
-char operation = Convert.ToChar(oper);
+double numOne = double.Parse(numInput);
+string op = Console.ReadLine();
 string numInput2 = Console.ReadLine();
-int secondNum = int.Parse(numInput2);
+double numTwo = double.Parse(numInput2);
 
+double res = 0;
 
+if (op == "+")
+{
+   res  = numOne + numTwo;
+}
+
+if (op == "-")
+{
+    res  = numOne - numTwo;
+}
+
+if (op == "*")
+{
+    res  = numOne * numTwo;
+}
+
+if (op == "/")
+{
+    res  = numOne / numTwo;
+}
+Console.WriteLine($"{res}");
 
 
 
