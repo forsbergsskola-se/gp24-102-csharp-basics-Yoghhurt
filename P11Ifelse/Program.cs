@@ -35,16 +35,45 @@ else if (result2 < 60)
 //P11_2
 Console.WriteLine("Give me three numbers.");
 string number1 = Console.ReadLine();
-int number4 = int.Parse(number1);
+int num4 = int.Parse(number1);
 string number2 = Console.ReadLine();
-int number5 = int.Parse(number2);
+int num5 = int.Parse(number2);
 string number3 = Console.ReadLine();
-int number6 = int.Parse(number3);
+int num6 = int.Parse(number3);
 
-int big, small;
+int a = num4;
+int b = num5;
+int c = num6;
+int min, max;
 
+if (a > b & a > c)
+{
+    max = a;
+}
+else if (b > a & b > c)
+{
+    max = b;
+}
+else
+{
+    max = c;
+}
 
+if (a < b & a < c)
+{
+    min = a;
+}
+else if (b < a & b < c)
+{
+    min = b;
+}
+else
+{
+    min = c;
+}
 
+Console.WriteLine($"{max} is the biggest number.");
+Console.WriteLine($"{min} is the smallest number.");
 
 //P11_3
 Console.WriteLine("Vowel, number or consonant?");
