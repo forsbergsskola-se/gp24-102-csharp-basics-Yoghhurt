@@ -149,7 +149,46 @@ else
     Console.WriteLine($"{userInt} is odd");
 }
 
+//P11 main exercise
 
+Console.WriteLine("What's your age?");
+string ageInput = Console.ReadLine();
+int userAge = int.Parse(ageInput);
 
+if (userAge <= 12)
+{
+    Console.WriteLine("You're a child.");
+}
+if (userAge <= 19)
+{
+    Console.WriteLine("You're a teen.");
+}
+else
+{
+    Console.WriteLine("You're an Adult.");
+}
 
+Console.WriteLine("Give me another integer");
+string intInput = Console.ReadLine();
+int userInter = int.Parse(intInput);
+
+if (userInter >= userAge)
+{
+    Console.WriteLine($"{userInter} is the highest number.");
+    Console.WriteLine($"{userAge} is the lowest number.");
+}
+else
+{
+    Console.WriteLine($"{userAge} is the highest number.");
+    Console.WriteLine($"{userInter} is the lowest number.");
+}
+
+if (userInter % 2 == 0)
+{
+    Console.WriteLine($"{userInter} is even");
+}
+else
+{
+    Console.WriteLine($"{userInter} is odd");
+}
 
